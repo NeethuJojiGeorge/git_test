@@ -1,0 +1,77 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  font-family: 'Vollkorn', serif;
+  background-color: #c0c0c0;
+}
+p,blockquote{
+  font-size: .9em;
+  line-height: 1.6em;
+}
+.logotext{
+  color:#0d0733 ;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.mainimage{
+  background-size: contain;
+  max-width: 100%
+  height:auto;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.foodimg{
+  width: 100%;
+}
+.contain{
+  text-align: center;
+  padding: .8em 1.2em;
+
+}
+h2,.subhead{
+  position: relative;
+  z-index: 3;
+}
+.subhead{
+  font-size: 1.1em;
+}
+.blue-contain{
+  width: 100%
+  background:#00c2ff;
+  color:black;
+  margin-top: 15%;
+  padding: 4em 0 2em;
+  border-radius: 40px;
+
+}

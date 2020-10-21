@@ -1,0 +1,121 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #ffff;
+    letter-spacing: 1px;
+    background: url(crest.jpg);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #033246;
+}
+
+.logoimg {
+  margin-left: -82px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.container {
+
+background-color: #fafafafa;
+margin: 200px;
+display: grid;
+grid-template-columns: 40% 60%;
+}
+
+.container-time {
+background-color: rgba(5,48,71);
+padding: 50px;
+outline: 3px;
+outline-offset: -30px;
+text-align: center;
+
+}
+
+.heading {
+font-size: 35px;
+text-transform: uppercase;
+}
+
+.heading-days {
+color:#FA8072;
+font-size: 30px;
+
+}
+
+.container-form {
+padding: 20px 0;
+margin: 0 auto;
+color: #FA8072;
+}
+
+form {
+display: grid;
+grid-row-gap: 20px;
+}
+form p {
+font-weight: 600PX;
+}
+.form-field {
+color: #000;
+font-size:18px; 
+font-family: serif;	
+display: flex;
+justify-content: space-between;
+}
+
+input,select {
+padding: 10px 20px;
+width: 200px;
+box-sizing: content-box;
+background-color: #F5FCFF;
+}
+.btn {
+background-color: rgba(5,48,71);
+color: #FA8072;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+-ms-border-radius: 100px;
+-o-border-radius: 100px;
+}
+
+

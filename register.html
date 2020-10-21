@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #c76967;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  color: white;
+  background-color: #033246;
+  float: center;
+  width: 50%;
+  display: inline-block;
+  margin-top: 5%;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 #21273B, 0 6px 20px 0 #21273B;
+}
+
+
+input[type=text], input[type=password], input[type=date]{
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background-color: #7994a4;
+  width: 100%;
+
+}
+
+
+
+.registerbtn {
+  background-color: #033246 ;
+  width: 30%;
+   color: #7994a4;
+   padding: 15px;
+   margin: 10px 0px;
+   border: none;
+   cursor: pointer;
+}
+
+.registerbtn:hover {
+  background-color: #7994a4;
+  color: black;
+}
+
+
+a {
+  color: white;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+
+
+    <center><img style="width:200px;height:200px;" src="icon.jpg" alt="logo"></center>
+
+    <hr>
+    <label for="user_name" style="float:left;">Enter your Name</label>
+    <input type="text" placeholder="Name" name="user_name" id="user_name" required><br>
+    <label for="email" style="float:left;">Enter Email ID</label>
+    <input type="text" placeholder="Email" name="email" id="email" required><br>
+    <label for="psw" style="float:left;">Enter Password</label>
+    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+    <label for="psq-repeat" style="float:left;">Enter above Password</label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br>
+    <label for="birthday" style="float:left;">Enter Date of Birthday</label>
+    <input type="date" id="birthday" name="birthday">
+    <hr>
+
+
+    <button type="submit" class="registerbtn">Register</button>
+    <p>Already have an account? <a href="login main.html">Sign in</a>.</p>
+  </div>
+
+
+</form>
+
+</body>
+</html>

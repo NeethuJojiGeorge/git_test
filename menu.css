@@ -1,0 +1,135 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 75px;
+   font-family: serif;
+   color: #FFF8DC;
+   border-bottom-style: solid;
+ }
+
+.cen {
+   position: absolute;
+   top: 32%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 30px;
+   font-family: serif;
+   color: #FFF8DC;
+   word-spacing: 10px;
+}
+.wrapper{
+  width:1200px;
+  margin:100px auto;
+}
+.title{
+  text-align:center;
+  margin-bottom:60px;
+  font-family: serif;
+}
+.title h4{
+  text-transform:capitalize;
+  font-size:36px;
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+}
+.title h4 span{
+  display:block;
+  font-size:18px;
+  font-style:italic;
+  margin-bottom:-10px;
+}
+.title h4:before{
+  position:absolute;
+  content:"";
+  width:100px;
+  height:2px;
+  border-bottom-style: solid;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+title ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  display: inline-flex;
+}
+
+ul li a{
+  text-decoration:none;
+  color:#053047;
+  padding:30px 0 100px;
+  margin: 0 50px;
+  font-size:30px;
+}
+
+ul li a:hover{
+  color: #FA8072;
+  transition:  .9s;
+}
+
+ul li a:after{
+  content: '';
+  position: absolute;
+
+}
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.single-menu{
+  flex-basis:580px;
+  margin-bottom:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid #D4AF37;
+}
+
+.single-menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.single-menu:hover img{
+  border-radius:0;
+}
+.single-menu img{
+  max-width:250px;
+  margin-right:40px;
+  border-radius:50%;
+  border:1px;
+  padding:3px;
+  transition:.5s;
+}
+.single-menu h3{
+  text-transform:capitalize;
+  font-size:22px;
+  border-bottom:1px dashed #333;
+  margin-bottom:5px;
+  padding-bottom:5px;
+  text-align: center;
+}
+.single-menu h3 span {
+  float: right;
+  color:#D4AF37;
+  font-size:20px;
+  font-style:sans-serif;
+  padding: 30px;
+  text-align: center;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Login Page </title>
+      <style>
+              Body {
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: #c76967;
+                text-align: center;
+                  }
+             .main{
+                      display: inline-block;
+                      margin-top: 3%;
+                      text-align: center;
+                      padding-left: 70px;
+                      padding-right: 70px;
+                      padding-bottom: 30px;
+                      background-color: #033246;
+                      width: 70%;
+                      box-shadow: 0 4px 8px 0 #21273B, 0 6px 20px 0 #21273B;
+                   }
+              .rightSide{
+                     float: right;
+                     width: 30%;
+                }
+
+                .leftSide{
+                  float: left;
+                  width: 40%;
+                  padding-top: 10%;
+                }
+                #slideShow{
+                  margin: auto;
+                  width: 140%;
+                  height: 120%;
+                  object-fit: cover;
+
+                }
+
+              button {
+                     background-color: #033246 ;
+                     width: 30%;
+                      color: #7994a4;
+                      padding: 15px;
+                      margin: 10px 0px;
+                      border: none;
+                      cursor: pointer;
+                       }
+
+               input[type=text], input[type=password] {
+                      width: 100%;
+                      margin: 8px 0;
+                      padding: 12px 20px;
+                      display: inline-block;
+                      border: none;
+                      box-sizing: border-box;
+                      background-color: #7994a4;
+
+                  }
+               button:hover {
+                      background-color: #7994a4;
+                      color: black;
+                  }
+
+                  ::placeholder {
+                    color: black;
+                    opacity: 1;
+                  }
+
+                  /* The dots/bullets/indicators */
+                  .dot {
+                    height: 5px;
+                    width: 5px;
+                    background-color: #bbb;
+                    border-radius: 30%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                    text-align: center;
+                    margin: auto;
+                  }
+
+                  .active {
+                    background-color: #717171;
+                  }
+
+                  /* Fading animation */
+                  .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                  }
+
+                  @-webkit-keyframes fade {
+                    from {opacity: .4}
+                    to {opacity: 1}
+                  }
+
+                  @keyframes fade {              <!--specifies the animation code-->
+                    from {opacity: .4}
+                    to {opacity: 1}
+                  }
+
+        </style>
+      </head>
+      <body>
+        <form>
+
+            <div class="main" >
+                  <div class="leftSide">
+                          <div class="mySlides">
+                              <center><img id="slideShow" src="sldshw1.jpg" alt="image1"></center>
+                          </div>
+                          <div class="mySlides">
+                              <center><img id="slideShow" src="sldshw2.jpg" alt="image2"></center>
+                          </div>
+                          <div class="mySlides">
+                              <center><img id="slideShow" src="sldshw3.jpg" alt="image3"></center>
+                          </div>
+                          <div style="margin-left: 40%;">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                          </div>
+                  </div>
+                  <div class="rightSide">
+                  <center><img style="width:200px;height:200px;" src="icon.jpg" alt="logo"></center>
+                  <hr>
+                  <center><input type="text" placeholder="Enter Username" name="username" required></center><br>
+                  <center><input type="password" placeholder="Enter Password" name="password" required></center><br>
+                  <hr>
+                  <center><button type="submit">Login</button></center><br>
+                  <p style="text-align:left;">
+                            <a style="color: #7994a4;" href="register.html"> Not Registered? </a>
+                        <span style="float:right;">
+                            <a style="color: #7994a4;" href="frgt_pswd.html"> Forgot password? </a>
+                        </span>
+                  </p>
+                </div>
+            </div>
+
+      </form>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++)
+          {
+              slides[i].style.display = "none";
+          }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++)
+          {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+    </body>
+</html>
